@@ -29,7 +29,7 @@ function draw() {
   // Arka planı hafif şeffaf bir katmanla sürekli temizle (iz efekti için)
   //fill(220, 5); // Çok açık renk, belki biraz daha koyu?
  
-   fill(255, 255, 255, 10); // Beyaz, daha az şeffaf
+   fill(255, 255, 255, 5); // Beyaz, daha az şeffaf
    rect(0, 0, width, height); // background() zaten tüm alanı kaplar
 
   // Draw connections
