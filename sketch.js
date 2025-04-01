@@ -17,8 +17,8 @@ function setup() {
   for (let i = 0; i < numParticles; i++) {
     particles.push({
       x: random(width),
-      // y: random((height / 5) * 1), // Başlangıçta ekranın üst %20'sine yaymak yerine tüm alana yayalım mı?
-      y: random(height), // Tüm yüksekliğe yay
+      y: random((height / 5) * 1), // Başlangıçta ekranın üst %20'sine yaymak yerine tüm alana yayalım mı?
+     // y: random(height), // Tüm yüksekliğe yay
       vx: random(-maxVelocity, maxVelocity),
       vy: random(-maxVelocity, maxVelocity),
     });
