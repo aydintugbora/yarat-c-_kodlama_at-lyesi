@@ -33,9 +33,9 @@ function draw() {
    rect(0, 0, width, height); // background() zaten tüm alanı kaplar
 
   // Draw connections
-  // stroke(0, 130); // Siyah, yarı şeffaf bağlantılar
-  stroke(100, 150, 200, 80); // Daha açık mavi tonlu, daha şeffaf bağlantılar
-  strokeWeight(0.5); // Daha ince bağlantılar
+  stroke(0, 130); // Siyah, yarı şeffaf bağlantılar
+  //stroke(100, 150, 200, 80); // Daha açık mavi tonlu, daha şeffaf bağlantılar
+  strokeWeight(1); // Daha ince bağlantılar
   for (let i = 0; i < numParticles; i++) {
     let p1 = particles[i];
     for (let j = i + 1; j < numParticles; j++) {
