@@ -11,7 +11,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('p5-background'); // Canvas'ı belirtilen ID'ye sahip div'e ata
 
-  // background(225); // Arka planı draw içinde sürekli çizdiğimiz için burada gereksiz
+  background(225); // Arka planı draw içinde sürekli çizdiğimiz için burada gereksiz
   noStroke(); // Parçacıklar için kenarlık olmasın (bağlantılar için stroke'u draw içinde ayarlıyoruz)
 
   for (let i = 0; i < numParticles; i++) {
@@ -27,10 +27,10 @@ function setup() {
 
 function draw() {
   // Arka planı hafif şeffaf bir katmanla sürekli temizle (iz efekti için)
-  // fill(220, 5); // Çok açık renk, belki biraz daha koyu?
-  background(235, 245, 255, 15); // Hafif mavi tonlu, daha belirgin şeffaflıkta
-  // fill(255, 255, 255, 10); // Beyaz, daha az şeffaf
-  // rect(0, 0, width, height); // background() zaten tüm alanı kaplar
+  //fill(220, 5); // Çok açık renk, belki biraz daha koyu?
+ 
+   fill(255, 255, 255, 10); // Beyaz, daha az şeffaf
+   rect(0, 0, width, height); // background() zaten tüm alanı kaplar
 
   // Draw connections
   // stroke(0, 130); // Siyah, yarı şeffaf bağlantılar
